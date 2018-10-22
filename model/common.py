@@ -19,15 +19,11 @@ def generate_random(table):
     def guess_upper_letter():
         return random.choice('abcdefghijklmnopqrstuvwxyz').upper()
 
-
     def guess_letter():
         return random.choice('abcdefghijklmnopqrstuvwxyz')
 
-
-
     def guess_int():
-        return random.randint(1,9)
-
+        return random.randint(1, 9)
 
     a = str(guess_letter())
     b = str(guess_upper_letter())
@@ -37,11 +33,8 @@ def generate_random(table):
     f = str(guess_letter())
     generated = a + b + c + d + e + f + '#&'
 
-    if generated in table:
-        return generate_random(table)
-    else:
-        return generated
-
-    # your code
+    for lines in table:
+        if lines[0] == generated:
+            return generate_random(table)
 
     return generated
