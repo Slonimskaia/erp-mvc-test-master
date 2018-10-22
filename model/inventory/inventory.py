@@ -26,6 +26,8 @@ def add(table, record):
         list: Table with a new record
     """
     # your code
+    
+
 
     return table
 
