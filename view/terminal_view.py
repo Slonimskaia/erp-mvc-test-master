@@ -92,10 +92,11 @@ def get_inputs(list_labels, title):
         list: List of data given by the user. Sample return:
             [<user_input_1>, <user_input_2>, <user_input_3>]
     """
-    option_number = input(list_labels[0])
-    inputs = [option_number]
-
-    # your code
+    if title:
+        print(f'{title}')
+    inputs = []
+    for labels in list_labels:
+        inputs.append(input(labels))
 
     return inputs
 

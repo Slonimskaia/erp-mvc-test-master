@@ -12,5 +12,7 @@ def run():
     Returns:
         None
     """
-    print('uadlo sie')
+    options = ['Add item', 'Edit item', 'Remove item']
+    terminal_view.get_choice(options)
     # your code
+    #TODO: menu jak w Root_controller i dopiero potem w model
