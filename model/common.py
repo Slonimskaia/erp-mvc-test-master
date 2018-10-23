@@ -40,5 +40,5 @@ def generate_random(table):
     return generated
 
 
-def add_to_inventory(table):
-    pass
+# def add_item(table, list_labels):
+#     get

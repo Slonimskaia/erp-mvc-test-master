@@ -62,12 +62,11 @@ def print_menu(title, list_options, exit_message):
     """
 
     # your code
-    # def option_print(list_options):
+    
     print(f'{title}')
     for numb, options in enumerate(list_options, 1):
         numb = f'({numb})'
         print(f'{numb:>6} {options}')
-    # print(f'{option_print(list_options)}') TODO:dlaczego z funkcja dodawalo none
     zero_option = '(0)'
     print(f'{zero_option:>6} {exit_message}')
 
