@@ -24,7 +24,6 @@ def add(table, record):
         list: Table with a new record
     """
     record.insert(0, common.generate_random(record))
-    # common.generate_random(record)
     table.append(record)
 
     return table
